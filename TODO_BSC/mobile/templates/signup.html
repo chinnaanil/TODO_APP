@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+{% block content %}
+<h1 style="text-align:start">MANA TODO</h1>
+<h1>signup now</h1>
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" id="username" name="username" placeholder="Enter username"size="45" required/><br><br>
+    <input type="text" id="email" name="email" placeholder="Enter email" required/>
+    <input type="text" id="task" name="task" placeholder="Enter task" required/><br><br>
+    <input type="date" id="due" name="due" placeholder="Enter due"  required/> 
+    <input type="password" id="password" name="password" placeholder="Enter password" size="28" required/><br><br>
+    <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter confirm_password" size="45" required/><br><br>
+
+    <button class="btn btn-outline-success" type="submit"><a href="{% url 'signup' %}">Signup</a></button>
+
+</form>
+
+{% include "messages.html" %}
+
+{% endblock content %}

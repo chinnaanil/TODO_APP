@@ -1,0 +1,42 @@
+.first{
+    text-align: center;
+    background-color: white;
+    margin: 100px;
+    border-radius:5px ;
+    box-shadow:0 0 10px black; 
+ } 
+body{
+     background-color: beige;
+    cursor: pointer;
+} 
+#val{
+    float:right;
+    height: 20px;
+}
+#search{
+    float: right;
+    height: 30px;
+}
+#sear{
+    padding-left: 990px;
+}
+table,th{
+    border: 3px solid black;
+}
+#show{
+    float: left;
+}
+#previous{
+    padding: 990px;
+}
+#next{
+    float: right;
+}
+#save.hover{
+    cursor: pointer;
+}
+
+#save{
+    background-color: blue;
+}
+
